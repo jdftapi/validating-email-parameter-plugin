@@ -6,8 +6,7 @@ Plugin;
 - prevents sending e-mails except the specified domain.
 - prevents typo
 
-## Parameter Definition;
-
+## Parameter Definition
 ![](./src/main/resources/io/jenkins/plugins/image/p1.png)
 
 - Default Value  : Specifies the default value of the field, which allows the user to save typing the actual value.
@@ -16,7 +15,7 @@ Plugin;
 
 ![](./src/main/resources/io/jenkins/plugins/image/p2.png)
 
-## Validation;
+## Validation
 
 <img src="./src/main/resources/io/jenkins/plugins/image/p3.png" width="550" height="250">
 
@@ -30,21 +29,21 @@ Plugin;
 
 <img src="./src/main/resources/io/jenkins/plugins/image/p5.png" width="550" height="250">
 
-### External Email : ### false
+### External Email : false
 
 <img src="./src/main/resources/io/jenkins/plugins/image/p7.png" width="550" height="250">
 
-## Build;
+## Build
 
-- Invalid Email;
+- Invalid Email
 
 ![](./src/main/resources/io/jenkins/plugins/image/p9.png)
 
-- Valid Email;
+- Valid Email
 
 ![](./src/main/resources/io/jenkins/plugins/image/p10.png)
 
-## You can copy that code directly into the pipeline block in your Jenkinsfile;
+## You can copy that code directly into the pipeline block in your Jenkinsfile
 
 ```node
 
