@@ -49,7 +49,7 @@ Valid Email;
 ```node
 
 parameters {
-  validation defaultValue: 'sezai.can@sahibinden.com', description: 'Email Address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
+  validation defaultValue: 'sezai.can team.mail', description: 'Email Address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
 }
 
 
