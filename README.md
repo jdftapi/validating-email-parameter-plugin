@@ -50,9 +50,22 @@ Plugin;
 
 ```node
 
-parameters {
-  validation defaultValue: 'sezai.can team.mail', description: 'Email Address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
+pipeline {
+   agent any
+
+    parameters {
+        email defaultValue: 'sezai.can', description: 'Email address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
+    }
+
+   stages {
+      stage('Email') {
+         steps {
+            echo "${params.EMAIL}"
+         }
+      }
+   }
 }
+
 
 
 ```

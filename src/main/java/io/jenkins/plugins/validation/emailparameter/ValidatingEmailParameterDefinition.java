@@ -83,7 +83,7 @@ public class ValidatingEmailParameterDefinition extends ParameterDefinition
     }
 
     @Extension
-    @Symbol("validation")
+    @Symbol({"email","emailParam"})
     public static class DescriptorImpl extends ParameterDescriptor
     {
 
