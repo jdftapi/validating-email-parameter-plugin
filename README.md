@@ -1,6 +1,8 @@
 Jenkins Validating Email Parameter Plugin
 ==============
 
+master: [![Build Status](https://travis-ci.com/szcn/validating-email-parameter-plugin.svg?branch=master)](https://travis-ci.com/szcn/validating-email-parameter-plugin)
+
 ```
 Plugin;
 - performs e-mail validation
