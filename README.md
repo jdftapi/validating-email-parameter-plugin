@@ -10,9 +10,9 @@ Plugin;
 
 ![](./src/main/resources/io/jenkins/plugins/image/p1.png)
 
-### Default Value  : Specifies the default value of the field, which allows the user to save typing the actual value.
+- Default Value  : Specifies the default value of the field, which allows the user to save typing the actual value.
 
-### Domain         : Permitted domain name for sending mail.
+- Domain         : Permitted domain name for sending mail.
 
 ![](./src/main/resources/io/jenkins/plugins/image/p2.png)
 
@@ -36,11 +36,11 @@ Plugin;
 
 ## Build;
 
-### Invalid Email;
+- Invalid Email;
 
 ![](./src/main/resources/io/jenkins/plugins/image/p9.png)
 
-### Valid Email;
+- Valid Email;
 
 ![](./src/main/resources/io/jenkins/plugins/image/p10.png)
 
