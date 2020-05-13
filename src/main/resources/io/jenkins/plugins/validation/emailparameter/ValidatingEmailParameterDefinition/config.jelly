@@ -1,0 +1,25 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+         xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt" xmlns:p="/lib/hudson/project">
+    <f:entry title="${%Name}" help="/help/parameter/name.html">
+        <f:textbox field="name"/>
+    </f:entry>
+    <f:entry title="${%Default Value}" help="/help/parameter/string-default.html">
+        <f:textbox field="defaultValue"/>
+    </f:entry>
+    <f:entry title="${%Domain}" help="/plugin/validating-email-parameter/help-domain.html">
+        <f:textbox field="domain"/>
+    </f:entry>
+    <f:entry title="${%Description}" help="/help/parameter/description.html">
+        <f:textarea name="description" field="description"
+                    codemirror-mode="${app.markupFormatter.codeMirrorMode}"
+                    codemirror-config="${app.markupFormatter.codeMirrorConfig}"
+                    previewEndpoint="/markupFormatter/previewDescription"/>
+    </f:entry>
+    <f:entry title="${%External Email}">
+        <f:checkbox name="externalEmail" field="externalEmail"
+                    checked="${it.externalEmail}"/>
+        If checked, Sending mail is allowed outside the set domain name.
+    </f:entry>
+</j:jelly>
