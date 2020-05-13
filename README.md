@@ -24,11 +24,11 @@ Domain         : Permitted domain name for sending mail.
 
 <img src="./src/main/resources/io/jenkins/plugins/image/p8.png" width="550" height="250">
 
+<img src="./src/main/resources/io/jenkins/plugins/image/p6.png" width="550" height="250">
+
 External Email : If checked, Sending mail is allowed outside the set domain name.
 
 <img src="./src/main/resources/io/jenkins/plugins/image/p5.png" width="550" height="250">
-
-<img src="./src/main/resources/io/jenkins/plugins/image/p6.png" width="550" height="250">
 
 External Email : ### false
 
