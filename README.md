@@ -1,10 +1,11 @@
 Jenkins Validating Email Parameter Plugin
 ==============
 
-Plugin;
-- performs e-mail validation
-- prevents sending e-mails except the specified domain.
-- prevents typo
+> Plugin;
+> - performs e-mail validation
+> - prevents sending e-mails except the specified domain.
+> - prevents typo
+> - user1@jenkins.io user2@jenkins.io user3@jenkins.io --> user1 user2 user3 can be written and performs specific validation. E-mail address will be generated automatically in the build process.
 
 ## Parameter Definition
 ![](./src/main/resources/io/jenkins/plugins/image/p1.png)
