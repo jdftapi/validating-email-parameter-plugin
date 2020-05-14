@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>validating-email-parameter</artifactId>
-    <tag>${scmTag}</tag>
+    <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
 
     <properties>
