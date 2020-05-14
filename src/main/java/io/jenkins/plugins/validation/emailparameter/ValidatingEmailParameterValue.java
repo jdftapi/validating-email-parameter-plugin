@@ -1,8 +1,10 @@
 package io.jenkins.plugins.validation.emailparameter;
 
+import hudson.EnvVars;
 import hudson.Launcher;
 import hudson.model.AbstractBuild;
 import hudson.model.BuildListener;
+import hudson.model.Run;
 import hudson.model.StringParameterValue;
 import hudson.tasks.BuildWrapper;
 import io.jenkins.plugins.constant.ErrorCode;
@@ -55,6 +57,11 @@ public class ValidatingEmailParameterValue extends StringParameterValue
         {
             return null;
         }
+    }
+
+    @Override
+    public void buildEnvironment(Run<?, ?> build, EnvVars env) {
+        super.buildEnvironment(build, env);
     }
 
     public String getError()

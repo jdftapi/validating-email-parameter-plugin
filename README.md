@@ -1,6 +1,8 @@
 Jenkins Validating Email Parameter Plugin
 ==============
 
+master: [![Build Status](https://travis-ci.com/szcn/validating-email-parameter-plugin.svg?branch=master)](https://travis-ci.com/szcn/validating-email-parameter-plugin)
+
 ```
 Plugin;
 - performs e-mail validation
@@ -50,9 +52,22 @@ Plugin;
 
 ```node
 
-parameters {
-  validation defaultValue: 'sezai.can team.mail', description: 'Email Address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
+pipeline {
+   agent any
+
+    parameters {
+        email defaultValue: 'sezai.can', description: 'Email address', domain: 'sahibinden.com', externalEmail: true, name: 'EMAIL'
+    }
+
+   stages {
+      stage('Email') {
+         steps {
+            echo "${params.EMAIL}"
+         }
+      }
+   }
 }
+
 
 
 ```
