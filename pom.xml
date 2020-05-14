@@ -9,13 +9,13 @@
     </parent>
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>validating-email-parameter</artifactId>
-    <version>v1.1</version>
+    <tag>${scmTag}</tag>
     <packaging>hpi</packaging>
 
     <properties>
         <jenkins.version>2.164.3</jenkins.version>
         <java.level>8</java.level>
-        <revision>v1.1</revision>
+        <revision>v1.2</revision>
         <changelist>-SNAPSHOT</changelist>
     </properties>
 
