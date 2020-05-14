@@ -9,14 +9,14 @@
     </parent>
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>validating-email-parameter</artifactId>
-    <version>${revision}${changelist}</version>
+    <version>v1.1</version>
     <packaging>hpi</packaging>
 
     <properties>
         <jenkins.version>2.164.3</jenkins.version>
         <java.level>8</java.level>
-        <revision>v1.1</revision>
-        <changelist>-SNAPSHOT</changelist>
+        <!--<revision>v1.1</revision>
+        <changelist>-SNAPSHOT</changelist>-->
     </properties>
 
     <name>Validating Email Parameter Plugin</name>
@@ -34,7 +34,7 @@
         <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
-        <tag>${scmTag}</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
