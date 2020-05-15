@@ -45,13 +45,13 @@
         </developer>
     </developers>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>central</id>
             <name>jenkinsci-releases</name>
             <url>https://repo.jenkins-ci.org/releases</url>
         </repository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <dependencies>
         <dependency>
@@ -74,6 +74,7 @@
             <url>https://repo.jenkins-ci.org/public/</url>
         </repository>
     </repositories>
+
     <pluginRepositories>
         <pluginRepository>
             <id>repo.jenkins-ci.org</id>
@@ -81,7 +82,7 @@
         </pluginRepository>
     </pluginRepositories>
 
-    <build>
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -98,5 +99,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>
