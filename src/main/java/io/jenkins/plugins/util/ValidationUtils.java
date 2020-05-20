@@ -32,7 +32,7 @@ public abstract class ValidationUtils {
             for (String s : params) {
 
                 if (Pattern.matches(Regex.EMAIL_PATTERN, s)) {
-                    if (externalEmail) {
+                    if (!externalEmail) {
 
                         if (Pattern.matches(domainRegEx, s)
                                 && Pattern.matches(Regex.EMAIL_PATTERN, s)) {
@@ -49,7 +49,7 @@ public abstract class ValidationUtils {
                         builder.append(s).append(" ");
                     }
                 } else if (!s.isEmpty()) {
-                    if (externalEmail) {
+                    if (!externalEmail) {
 
                         if (Pattern.matches(domainRegEx, (s + "@" + domain))) {
 
@@ -152,7 +152,7 @@ public abstract class ValidationUtils {
 
                 if (Pattern.matches(Regex.EMAIL_PATTERN, s)) {
 
-                    if (externalEmail) {
+                    if (!externalEmail) {
 
                         if (Pattern.matches(domainRegEx, s)
                                 && Pattern.matches(Regex.EMAIL_PATTERN, s)) {
@@ -166,7 +166,7 @@ public abstract class ValidationUtils {
                         builder.append(s).append(" ");
                     }
                 } else if (!s.isEmpty()) {
-                    if (externalEmail) {
+                    if (!externalEmail) {
 
                         if (Pattern.matches(domainRegEx, (s + "@" + domain))) {
 

@@ -15,36 +15,36 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Slf4j
 public class EmailValidationTest {
 
-  private ValidatingEmailParameterDefinition definition;
+    private ValidatingEmailParameterDefinition definition;
 
-  @Before
-  public void setUp() {
+    @Before
+    public void setUp() {
 
-    definition = new ValidatingEmailParameterDefinition(MockData.NAME, MockData.DEFAULT_VALUE,
-        MockData.DOMAIN, MockData.DESCRIPTION, MockData.EXTERNAL_EMAIL);
-  }
+        definition = new ValidatingEmailParameterDefinition(MockData.NAME, MockData.DEFAULT_VALUE,
+                MockData.DOMAIN, MockData.DESCRIPTION, MockData.EXTERNAL_EMAIL);
+    }
 
-  @Test
-  public void emailValidationTest() {
+    @Test
+    public void emailValidationTest() {
 
-    String params = ValidationUtils
-        .definitionParameter(definition.getDefaultValue(), definition.getDomain());
+        String params = ValidationUtils
+                .definitionParameter(definition.getDefaultValue(), definition.getDomain());
 
-    Arrays.stream(params.split(" ")).parallel().forEach(param -> {
+        Arrays.stream(params.split(" ")).parallel().forEach(param -> {
 
-      assertThat(accept(param)).isTrue();
-      log.info("Valid email address : {}", param);
-
-
-    });
+            assertThat(accept(param)).isTrue();
+            log.info("Valid email address : {}", param);
 
 
-  }
+        });
 
-  private boolean accept(String param) {
 
-    return Pattern.matches(Regex.EMAIL_PATTERN, param);
+    }
 
-  }
+    private boolean accept(String param) {
+
+        return Pattern.matches(Regex.EMAIL_PATTERN, param);
+
+    }
 
 }
