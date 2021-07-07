@@ -2,7 +2,9 @@ package io.jenkins.plugins.util;
 
 import hudson.util.FormValidation;
 import io.jenkins.plugins.constant.Regex;
+import java.util.EnumMap;
 import net.sf.json.JSONObject;
+import org.apache.commons.validator.routines.EmailValidator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -34,8 +36,7 @@ public abstract class ValidationUtils {
                 if (Pattern.matches(Regex.EMAIL_PATTERN, s)) {
                     if (!externalEmail) {
 
-                        if (Pattern.matches(domainRegEx, s)
-                                && Pattern.matches(Regex.EMAIL_PATTERN, s)) {
+                        if (Pattern.matches(domainRegEx, s)) {
                             builder.append(s).append(" ");
                         } else {
                             jsonObject.put(Key.IS_VALID.getValue(), false);
